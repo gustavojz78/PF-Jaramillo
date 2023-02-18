@@ -1,54 +1,48 @@
 /* sección de GRIDS II */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     #gridContainer {
+        display: grid;
         /*recordar que estos nombres solo son referenciales, puedo llamar las clases del grid como quiera */
-        grid-template-areas: "encabezado" "principal" "publicidad" "piePagina";
+        grid-template-areas:
+            "encabezado"
+            "principal"
+            "publicidad"
+            "piePagina";
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto;
-        display: grid;
+
     }
 
     .encabezado {
         grid-area: encabezado;
-        background-image: linear-gradient(to bottom, black, rgb(207, 190, 190));
         text-align: center;
-        align-items: center;
+        align-items: first baseline;
+
     }
 
     .principal {
         grid-area: principal;
-        align-items: center;
-        text-align: center;
+        justify-content: center;
+        align-content: space-around;
     }
 
     .publicidad {
         grid-area: publicidad;
-        background-color: yellow;
-        background-size: cover;
-        align-items: flex-end;
-    }
-
-
-    .publicidad {
-        grid-area: publicidad;
-        /* haciendo uso de las variables con los colores */
         background-color: $primario;
         background-size: cover;
-        align-items: flex-end;
-        -webkit-animation-name: colores;
+        justify-content: center;
+        align-content: space-around;
+
         animation-name: colores;
-        -webkit-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
-        -webkit-animation-timing-function: ease-in;
         animation-timing-function: ease-in;
-        -webkit-animation-duration: 2s;
         animation-duration: 2s;
-        -webkit-animation-delay: 2s;
-        animation-delay: 2s;
+        animation-delay: 0.5s;
     }
 
     .pieDePagina {
         grid-area: pieDePagina;
+        text-align: center;
         align-self: center;
     }
 }
@@ -57,22 +51,23 @@
     #gridContainer {
         display: grid;
         /*recordar que estos nombres solo son referenciales, puedo llamar las clases del grid como quiera */
-        grid-template-areas: "espacio   espacio   publicidad" "principal principal publicidad" "piePagina pieDePagina pieDePagina";
-        grid-template-columns: auto auto auto;
-        row-gap: 4px;
+        grid-template-areas:
+            "principal principal publicidad"
+            "principal principal publicidad"
+        ;
         grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto;
     }
 
     .encabezado {
         grid-area: encabezado;
-        /* haciendo uso de las variables cpn los colores */
-        background-image: linear-gradient(to bottom, black, rgb(207, 190, 190));
         justify-content: left;
         align-items: center;
     }
 
     .principal {
         grid-area: principal;
+        text-align: center;
         justify-items: center;
     }
 
@@ -81,17 +76,15 @@
         /* haciendo uso de las variables cpn los colores */
         background-color: $primario;
         background-size: cover;
-        align-items: flex-end;
-        -webkit-animation-name: colores;
+        width: 100%;
+        text-align: center;
+        align-content: center;
+
         animation-name: colores;
-        -webkit-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
-        -webkit-animation-timing-function: ease-in;
         animation-timing-function: ease-in;
-        -webkit-animation-duration: 2s;
         animation-duration: 2s;
-        -webkit-animation-delay: 2s;
-        animation-delay: 2s;
+        animation-delay: 0.5s;
     }
 
     .pieDePagina {

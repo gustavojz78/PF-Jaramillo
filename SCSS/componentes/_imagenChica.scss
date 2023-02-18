@@ -3,13 +3,13 @@
 
     /* haciendo uso del MIXIN */
     @include ancho_alto(200px, 200px);
-
+    filter:grayscale(1);
     transition: all 1s;
 
     &:hover {
 
-        @include ancho_alto(400px, 400px);
-        padding: 30px;
+        @include ancho_alto(250px, 250px);
+        filter:none;
     }
 }
 
@@ -17,5 +17,5 @@
 .bordes {
     border-width: 7px;
     border-style: ridge;
-    border-color: yellow;
+    border-color: silver;
 }
