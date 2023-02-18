@@ -1,68 +1,29 @@
 #gradiente {
-    background-image: linear-gradient(black, rgb(204, 191, 191));
-}
-
-
-@-webkit-keyframes colores {
-    0% {
-        width: 100%;
-        background-color: white;
-    }
-
-    20% {
-        width: 100%;
-        background-color: pink;
-    }
-
-    40% {
-        width: 100%;
-        background-color: violet;
-    }
-
-    60% {
-        width: 100%;
-        background-color: red;
-    }
-
-    80% {
-        width: 100%;
-        background-color: orange;
-    }
-
-    100% {
-        width: 100%;
-        background-color: yellow;
-    }
+    background-image: linear-gradient($secundario,$primario);
 }
 
 @keyframes colores {
     0% {
-        width: 100%;
         background-color: white;
     }
 
     20% {
-        width: 100%;
         background-color: pink;
     }
 
     40% {
-        width: 100%;
         background-color: violet;
     }
 
     60% {
-        width: 100%;
         background-color: red;
     }
 
     80% {
-        width: 100%;
         background-color: orange;
     }
 
     100% {
-        width: 100%;
         background-color: yellow;
     }
 }

@@ -1,14 +1,31 @@
+
 header {
-    text-align: right;
-    font-weight: bolder;
-    font-family: Arial;
-    display: inline-block;
+    background-image: linear-gradient(to bottom, $secundario, $primario);
+
+}
+
+main {
+    text-align: center;
+}
+
+div{
+    margin:5px;
+    padding:30px;
 }
 
 section {
-    color: red;
+    background-color: transparent; 
 }
 
+span{
+    background-color: yellow;
+}
+
+
 footer {
-    background-image: linear-gradient(to top, black, rgb(218, 210, 210));
+    background-image: linear-gradient(to top, $secundario, $primario);
+}
+
+.espacioNav{
+    word-spacing: 15pt;
 }
