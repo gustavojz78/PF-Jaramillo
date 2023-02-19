@@ -16,22 +16,23 @@
     .encabezado {
         grid-area: encabezado;
         text-align: center;
-        align-items: first baseline;
+        align-items: center;
 
     }
 
     .principal {
         grid-area: principal;
-        justify-content: center;
-        align-content: space-around;
+        margin-top: 350px;
+        text-align: center;
+        align-items: center;
     }
 
     .publicidad {
         grid-area: publicidad;
         background-color: $primario;
         background-size: cover;
-        justify-content: center;
-        align-content: space-around;
+        text-align: center;
+        align-items: center;
 
         animation-name: colores;
         animation-iteration-count: infinite;
@@ -42,8 +43,9 @@
 
     .pieDePagina {
         grid-area: pieDePagina;
+        width: 100%;
         text-align: center;
-        align-self: center;
+        align-items: center;
     }
 }
 
@@ -67,6 +69,7 @@
 
     .principal {
         grid-area: principal;
+        margin-top: 180px;
         text-align: center;
         justify-items: center;
     }
